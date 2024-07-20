@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('web.backend.layouts.app');
+    return view('web.backend.home');
 });

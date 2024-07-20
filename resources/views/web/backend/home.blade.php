@@ -1,5 +1,5 @@
 @extends('web.backend.layouts.app')
 
 @section('content')
-    <h1>Hi</h1>
+<h1>Content</h1>
 @endsection
