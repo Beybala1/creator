@@ -13,8 +13,8 @@
 </li> --}}
 
 <li class="menu-item active">
-    <a href="dashboards-analytics.html" class="menu-link">
+    <a href="{{ route("configurations.index") }}" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
-        <div>Test</div>
+        <div>@lang("Configurations")</div>
     </a>
 </li>
