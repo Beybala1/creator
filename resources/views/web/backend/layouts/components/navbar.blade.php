@@ -58,20 +58,7 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-        <!-- Dashboards -->
-        <li class="menu-item active open">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Dashboards">Dashboards</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item active">
-                    <a href="dashboards-analytics.html" class="menu-link">
-                        <div data-i18n="Analytics">Analytics</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
+        @include('web.backend.layouts.components.sidebar')
     </ul>
 </aside>
 
