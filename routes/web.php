@@ -12,6 +12,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get("/", [HomeController::class, "index"])->name("admin.index");
     Route::group(['prefix' => 'configurations'], function() {
         Route::get("/", [ConfigurationsController::class, "index"])->name("configurations.index");
+        Route::put("/update", [ConfigurationsController::class, "update"])->name("configurations.update");
     });
 });
 
