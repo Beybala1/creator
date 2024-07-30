@@ -15,17 +15,29 @@ class ConfigurationsController extends Controller
     public function update(Request $request)
     {
         $validated = $request->validate([
-            // Define your validation rules here
-            // 'field_name' => 'required|type',
-        ]);   
-           
-        // Find the configuration to update
-        $configuration = Configurations::find($request->id);
-    
-        // Update the configuration with the validated data
-        $configuration->update($validated);
+            'is_header'     => 'required|in:0,1',
+            'is_slider'     => 'required|in:0,1',
+            'is_service'   => 'required|in:0,1',
+            'is_blog'   => 'required|in:0,1',
+            'is_brand'     => 'required|in:0,1',
+            'is_about'     => 'required|in:0,1',
+            'is_contact_us' => 'required|in:0,1',
+            'is_footer'     => 'required|in:0,1',
+        ]);
 
-        // Return a response
+        $configuration = Configurations::first();
+        
+        $configuration->update([
+            'is_header'     => $request->is_header,
+            'is_slider'     => $request->is_slider,
+            'is_service'    => $request->is_service,
+            'is_blog'       => $request->is_blog,
+            'is_brand'      => $request->is_brand,
+            'is_about'      => $request->is_about,
+            'is_contact_us' => $request->is_contact_us,
+            'is_footer'     => $request->is_footer,
+        ]);
+
         return response()->json(['message' => 'Configuration updated successfully']); 
     }
 }

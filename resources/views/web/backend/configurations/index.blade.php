@@ -21,7 +21,7 @@
                             <td>@lang("Header")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="header" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_header" data-role="configurations" class="form-check-input" type="checkbox" 
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -30,7 +30,7 @@
                             <td>@lang("Slider")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="slider" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_slider" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -39,7 +39,7 @@
                             <td>@lang("Services")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="services" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_service" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -48,7 +48,7 @@
                             <td>@lang("Brands")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="brands" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_brand" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -57,7 +57,7 @@
                             <td>@lang("Blogs")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="blogs" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_blog" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -66,7 +66,7 @@
                             <td>@lang("About")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="About" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_about" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -75,7 +75,7 @@
                             <td>@lang("Contact us")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="contact_us" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_contact_us" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -84,7 +84,7 @@
                             <td>@lang("Footer")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="footer" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_footer" data-role="configurations" class="form-check-input" type="checkbox"
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
