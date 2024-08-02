@@ -11,7 +11,7 @@ rel="stylesheet">
 
 <!-- Core CSS -->
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/css/rtl/core.css") }}"  />
-<link rel="stylesheet" href="{{ asset("backend/assets/vendor/css/rtl/theme-default.css") }}" class="template-customizer-theme-css" />
+<link rel="stylesheet" href="{{ asset("backend/assets/vendor/css/rtl/theme-default.css") }}" />
 <link rel="stylesheet" href="{{ asset("backend/assets/css/demo.css") }}" />
 
 <!-- Vendors CSS -->
@@ -19,5 +19,4 @@ rel="stylesheet">
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/typeahead-js/typeahead.css") }}" />
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/apex-charts/apex-charts.css") }}" />
 <script src="{{ asset("backend/assets/vendor/js/helpers.js") }}"></script>
-<script src="{{ asset("backend/assets/vendor/js/template-customizer.js") }}"></script>
 <script src="{{ asset("backend/assets/js/config.js") }}"></script>
