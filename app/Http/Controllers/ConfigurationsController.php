@@ -9,7 +9,8 @@ class ConfigurationsController extends Controller
 {
     public function index()
     {
-        return view('web.backend.configurations.index');
+        $configurations = Configurations::first();
+        return view('web.backend.configurations.index', compact("configurations"));
     }
 
     public function update(Request $request)

@@ -14,15 +14,16 @@
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0" data-role="table-list">
-                    <form action="{{ route("configurations.update") }}"  method="GET">
+                    <form action="{{ route("configurations.update") }}" method="GET">
                         @csrf
                         @method("PUT")
                         <tr>
                             <td>@lang("Header")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_header" data-role="configurations" class="form-check-input" type="checkbox" 
-                                        id="flexSwitchCheckChecked">
+                                    <input name="is_header" type="checkbox"
+                                        {{ $configurations->is_header ? "checked" : "" }} data-role="configurations"
+                                        class="form-check-input" id="flexSwitchCheckChecked">
                                 </div>
                             </td>
                         </tr>
@@ -30,7 +31,8 @@
                             <td>@lang("Slider")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_slider" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_slider" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_slider ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -39,7 +41,8 @@
                             <td>@lang("Services")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_service" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_service" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_service ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -48,7 +51,8 @@
                             <td>@lang("Brands")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_brand" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_brand" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_brand ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -57,7 +61,8 @@
                             <td>@lang("Blogs")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_blog" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_blog" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_blog ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -66,7 +71,8 @@
                             <td>@lang("About")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_about" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_about" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_about ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -75,7 +81,8 @@
                             <td>@lang("Contact us")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_contact_us" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_contact_us" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_contact_us ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>
@@ -84,7 +91,8 @@
                             <td>@lang("Footer")</td>
                             <td>
                                 <div class="form-check form-switch">
-                                    <input name="is_footer" data-role="configurations" class="form-check-input" type="checkbox"
+                                    <input name="is_footer" data-role="configurations" class="form-check-input"
+                                        type="checkbox" {{ $configurations->is_footer ? "checked" : "" }}
                                         id="flexSwitchCheckChecked">
                                 </div>
                             </td>

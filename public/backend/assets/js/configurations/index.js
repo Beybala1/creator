@@ -4,12 +4,12 @@ $(function () {
             "is_header" : $(`[name="is_header"]`).is(':checked') ? '1' : '0',
             "is_slider" : $(`[name="is_slider"]`).is(':checked') ? '1' : '0',
             "is_service" : $(`[name="is_service"]`).is(':checked') ? '1' : '0',
-            "is_blog" : $(`[name="is_blog"]`).is(':checked') ? '1' : '0',
+            "is_blog" : $(`[name="is_blog"]`).is(':checked')    ? '1' : '0',
             "is_brand" : $(`[name="is_brand"]`).is(':checked') ? '1' : '0',
             "is_about " : $(`[name="is_about "]`).is(':checked') ? '1' : '0',
             "is_contact_us" : $(`[name="is_contact_us"]`).is(':checked') ? '1' : '0',
             "is_footer" : $(`[name="is_footer"]`).is(':checked') ? '1' : '0',
-        };
+        }; 
 
         $.ajax({
             url: `/admin/configurations/update`,
