@@ -15,14 +15,13 @@ class ConfigurationsController extends Controller
     public function update(Request $request)
     {
         $validated = $request->validate([
-            'is_header'     => 'required|in:0,1',
-            'is_slider'     => 'required|in:0,1',
-            'is_service'   => 'required|in:0,1',
-            'is_blog'   => 'required|in:0,1',
-            'is_brand'     => 'required|in:0,1',
-            'is_about'     => 'required|in:0,1',
-            'is_contact_us' => 'required|in:0,1',
-            'is_footer'     => 'required|in:0,1',
+            'is_header'    => 'in:0,1',
+            'is_slider'    => 'in:0,1',   
+            'is_service'   => 'in:0,1',
+            'is_blog'      => 'in:0,1',
+            'is_brand'     => 'in:0,1',
+            'is_contact_us'=> 'in:0,1',
+            'is_footer'    => 'in:0,1',
         ]);
 
         $configuration = Configurations::first();

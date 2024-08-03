@@ -15,7 +15,6 @@ class Configurations extends Model
         'is_service',
         'is_blog',
         'is_brand',
-        'is_about',
         'is_contact_us',
         'is_footer'
     ];
