@@ -38,6 +38,6 @@ class ConfigurationsController extends Controller
             'is_footer'     => $request->is_footer,
         ]);
 
-        return response()->json(['message' => 'Configuration updated successfully']); 
+        return response()->json(["message" => ("Updated successfully")]); 
     }
 }

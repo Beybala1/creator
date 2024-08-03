@@ -8,3 +8,7 @@
 <script src="{{ asset("backend/assets/vendor/js/menu.js") }}"></script>
 <script src="{{ asset("backend/assets/vendor/libs/apex-charts/apexcharts.js") }}"></script>
 <script src="{{ asset("backend/assets/js/main.js") }}"></script>
+<script src="{{ asset("backend/assets/vendor/libs/toastr/toastr.js") }}"></script>
+<script src="{{ asset("backend/assets/js/ui-toasts.js") }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+

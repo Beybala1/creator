@@ -18,5 +18,8 @@ rel="stylesheet">
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css") }}" />
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/typeahead-js/typeahead.css") }}" />
 <link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/apex-charts/apex-charts.css") }}" />
+<link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/toastr/toastr.css")}}" />
+<link rel="stylesheet" href="{{ asset("backend/assets/vendor/libs/animate-css/animate.css") }}" />
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
 <script src="{{ asset("backend/assets/vendor/js/helpers.js") }}"></script>
 <script src="{{ asset("backend/assets/js/config.js") }}"></script>

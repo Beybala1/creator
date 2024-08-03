@@ -6,7 +6,7 @@ $(function () {
             "is_service" : $(`[name="is_service"]`).is(':checked') ? '1' : '0',
             "is_blog" : $(`[name="is_blog"]`).is(':checked')    ? '1' : '0',
             "is_brand" : $(`[name="is_brand"]`).is(':checked') ? '1' : '0',
-            "is_about " : $(`[name="is_about "]`).is(':checked') ? '1' : '0',
+            "is_about" : $(`[name="is_about"]`).is(':checked') ? '1' : '0',
             "is_contact_us" : $(`[name="is_contact_us"]`).is(':checked') ? '1' : '0',
             "is_footer" : $(`[name="is_footer"]`).is(':checked') ? '1' : '0',
         }; 
@@ -19,7 +19,7 @@ $(function () {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function (d) {
-                console.log(d);
+                toastr.success(d.message);
             },
             error: function (d) {
                 console.error(d);
