@@ -1,6 +1,6 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo ">
-        <a href="{{ route("admin.index") }}" class="app-brand-link">
+        <a href="{{ route("admin.index", app()->getLocale()) }}" class="app-brand-link">
             <span class="app-brand-logo demo">
 
                 <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                        <img src="{{ asset("backend\assets\img\profile\profile.jpg") }}" alt class="w-px-40 h-auto rounded-circle">
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -120,7 +120,7 @@
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
-                                        <img src="../../assets/img/avatars/1.png" alt
+                                        <img src="{{ asset("backend\assets\img\profile\profile.jpg") }}" alt
                                             class="w-px-40 h-auto rounded-circle">
                                     </div>
                                 </div>
@@ -137,14 +137,14 @@
                     <li>
                         <a class="dropdown-item" href="pages-profile-user.html">
                             <i class="bx bx-user me-2"></i>
-                            <span class="align-middle">My Profile</span>
+                            <span class="align-middle">@lang("backend.My profile")</span>
                         </a>
                     </li>
 
                     <li>
                         <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
                             <i class="bx bx-power-off me-2"></i>
-                            <span class="align-middle">Log Out</span>
+                            <span class="align-middle">@lang("backend.Log out")</span>
                         </a>
                     </li>
                 </ul>
@@ -153,3 +153,4 @@
         </ul>
     </div>
 </nav>
+           
